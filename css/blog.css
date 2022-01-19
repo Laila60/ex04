@@ -1,0 +1,168 @@
+.list_wrap {
+    /* padding: 100px; */
+    /* background: rgb(192,242,252); */
+}
+
+.list_wrap ul {
+    width: 90%;
+    min-width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.list_wrap .item {
+    width: 30%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 1,2,3은 마진탑 0 */
+.list_wrap .item:nth-child(-n+3) {
+    margin-top: 0;
+}
+/* 1,4,7은 마진레프트 0 */
+.list_wrap .item:nth-child(3n-2) {
+    margin-left: 0;
+}
+
+.list_wrap .item .img{
+    width: 100%;
+    height: 160px;
+    background-color: #ddd;
+    /* 이미지꽉차게하기 */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.list_wrap .item1 .img {background-image: url(../img/img1.png);}
+.list_wrap .item2 .img {background-image: url(../img/img2.png);}
+.list_wrap .item3 .img {background-image: url(../img/img3.png);}
+.list_wrap .item4 .img {background-image: url(../img/img4.png);}
+.list_wrap .item5 .img {background-image: url(../img/img5.png);}
+.list_wrap .item6 .img {background-image: url(../img/img6.png);}
+.list_wrap .item7 .img {background-image: url(../img/img7.png);}
+.list_wrap .item8 .img {background-image: url(../img/img8.png);}
+.list_wrap .item9 .img {background-image: url(../img/img9.png);}
+
+
+/* 이미지 호버 */
+
+/* .btext {
+    margin-top: 0px;
+    padding-bottom: 50px;
+    background : #000000; opacity:0;
+}
+
+.btext p {
+    padding-top: 500px;} */
+
+.list_wrap .item .img:hover {
+    opacity:0.7; 
+    text-align:center; 
+    color:#fff;
+}
+
+.list_wrap .item .cont{
+    padding: 15px;
+}
+
+.list_wrap .item strong {
+    font-size: 16px;
+    letter-spacing: -1px;
+    margin: 10px 0 10px 0;
+    display: block;
+    /* strong은 인라인블럭이기 때문에 디스플레이를 넣어줘야 마진값이 적용됨 */
+}
+
+.list_wrap .item p {
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+
+.list_wrap .item a {
+    font-size: 13px;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    /* border: 1px solid #ddd; */
+    background: rgba(255, 165, 0, 0.2);
+    padding: 5px 10px;
+    display: inline-block;
+    /* 버튼올렸을때 효과 all은 모두 background,color 개별도 가능 */
+    transition: all 0.5s ease;
+}
+
+.list_wrap .item a:hover {
+    background:orange;
+    color: #fff;
+}
+
+/* 세부 */
+.list_wrap_dt ul {
+    width: 100%;
+    min-width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.list_wrap_dt .item {
+    width: 100%;
+    margin-top: 140px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.list_wrap_dt .item .img{
+    width: 100%;
+    height: 500px;
+    background-color: #ddd;
+    /* 이미지꽉차게하기 */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.list_wrap_dt .item1 .img {background-image: url(../img/img1.png);}
+.list_wrap_dt .item2 .img {background-image: url(../img/img2.png);}
+.list_wrap_dt .item3 .img {background-image: url(../img/img3.png);}
+.list_wrap_dt .item4 .img {background-image: url(../img/img4.png);}
+.list_wrap_dt .item5 .img {background-image: url(../img/img5.png);}
+.list_wrap_dt .item6 .img {background-image: url(../img/img6.png);}
+.list_wrap_dt .item7 .img {background-image: url(../img/img7.png);}
+.list_wrap_dt .item8 .img {background-image: url(../img/img8.png);}
+.list_wrap_dt .item9 .img {background-image: url(../img/img9.png);}
+
+
+.list_wrap_dt .item .cont{
+    padding: 40px;
+}
+
+.list_wrap_dt .item strong {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin: 50px 20px 20px 20px;
+    display: block;
+    /* strong은 인라인블럭이기 때문에 디스플레이를 넣어줘야 마진값이 적용됨 */
+}
+
+.list_wrap_dt .item p {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin: 20px;
+}
+
+.list_wrap_dt .item .text {
+    width: 90%;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    /* border: 1px solid #ddd; */
+    background: rgba(255, 165, 0, 0.2);
+    padding: 40px;
+    display: inline-block;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
